@@ -36,9 +36,52 @@ const handleParallax = () => {
     });
 };
 
+
+// Mobile Menu Toggle
+const handleMobileMenu = () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  if (!menuToggle || !mobileMenu) return;
+
+  const toggleMenu = () => {
+    const isOpen = mobileMenu.classList.contains('translate-x-0');
+    
+    if (isOpen) {
+      mobileMenu.classList.replace('translate-x-0', 'translate-x-full');
+      menuIcon.setAttribute('data-lucide', 'menu');
+      document.body.classList.remove('overflow-hidden');
+    } else {
+      mobileMenu.classList.replace('translate-x-full', 'translate-x-0');
+      menuIcon.setAttribute('data-lucide', 'x');
+      document.body.classList.add('overflow-hidden');
+    }
+
+  // Refresh lucide icons for the toggle
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  };
+
+  menuToggle.addEventListener('click', toggleMenu);
+
+  // Close menu when a link is clicked
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.replace('translate-x-0', 'translate-x-full');
+      menuIcon.setAttribute('data-lucide', 'menu');
+      document.body.classList.remove('overflow-hidden');
+      if (window.lucide) lucide.createIcons();
+    });
+  });
+};
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
   revealOnScroll();
   handleParallax();
+  handleMobileMenu();
   console.log('Hlefi Village Digital Archive Initialized (Vanilla JS)');
 });
