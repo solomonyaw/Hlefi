@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./src/akwapem-togo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hlefi Village | Green Mountain Heritage</title>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+              display: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              forest: '#1B3217',
+              tropical: '#2D5A27',
+              earth: '#4D3A24',
+              bamboo: '#F5F5DC',
+              heritage: '#D4AF37',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'sway': 'sway 8s ease-in-out infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="bg-stone-50 text-emerald-950 font-sans selection:bg-emerald-600 selection:text-white">
+    
+    <nav class="fixed top-0 w-full z-50 p-4 md:p-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center glass rounded-full px-6 py-4">
+        <div class="flex items-center gap-2">
+          <i data-lucide="leaf" class="text-emerald-700 w-6 h-6"></i>
+          <span class="font-display font-bold text-xl tracking-tight uppercase">Hlefi Village</span>
+        </div>
+        <div class="hidden md:flex gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-900/70">
+          <a href="#about" class="hover:text-emerald-700 transition-colors">About</a>
+          <a href="#history" class="hover:text-emerald-700 transition-colors">History</a>
+          <a href="#agriculture" class="hover:text-emerald-700 transition-colors">Farming</a>
+          <a href="#water" class="hover:text-emerald-700 transition-colors">Water</a>
+          <a href="#culture" class="hover:text-emerald-700 transition-colors">Culture</a>
+          <a href="#tourism" class="hover:text-emerald-700 transition-colors">Tourism</a>
+        </div>
+        <a href="#contact" class="bg-emerald-900 text-white px-6 py-2 rounded-full text-[10px] font-bold tracking-widest hover:bg-emerald-700 transition-all shadow-lg">
+          CONTACT US
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="relative h-screen overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+          <img 
+            src="./src/akwapem-togo.png" 
+            alt="Green Ghana Mountains drone view"
+            class="w-full h-full object-cover brightness-75 scale-110"
+          />
+          <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-stone-50"></div>
+        </div>
+
+        <div class="relative z-10 text-center text-white px-4">
+          <div class="reveal">
+            <h1 class="text-6xl md:text-9xl mb-4 font-serif font-black tracking-tight drop-shadow-2xl">Welcome to Hlefi</h1>
+            <p class="text-xl md:text-3xl font-display uppercase tracking-[0.3em] font-medium opacity-90 mb-8">
+              The Green Mountain Village of the Volta Region
+            </p>
+            <div class="h-1 w-24 bg-yellow-500 mx-auto mb-8"></div>
+            <p class="max-w-3xl mx-auto text-lg md:text-2xl font-light italic opacity-90 leading-relaxed px-4">
+              “A resilient farming community rooted in Ewe heritage, sustainability, education, culture, and community development.”
+            </p>
+            <div class="mt-12 flex flex-wrap justify-center gap-4">
+              <a href="#about" class="px-8 py-4 bg-emerald-700 text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-emerald-600 transition-all shadow-xl">Explore Hlefi</a>
+              <a href="#history" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white/20 transition-all">Village History</a>
+              <a href="https://grokipedia.com/page/hlefi" target="_blank" class="px-8 py-4 bg-yellow-500 text-emerald-950 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-yellow-400 transition-all shadow-xl">Read History on Grokipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-10 flex flex-col items-center gap-2 text-white/70 animate-bounce">
+          <span class="text-[10px] uppercase tracking-widest font-bold">Discover More</span>
+          <i data-lucide="chevron-down" size="24"></i>
+        </div>
+      </section>
+
+      <!-- BIOGRAPHY SECTION -->
+      <section id="about" class="py-32 px-6 md:px-20 bg-stone-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="relative reveal">
+              <div class="mb-12">
+                <h2 class="text-5xl md:text-7xl text-emerald-950 mb-6 font-serif">About Hlefi</h2>
+                <div class="h-1.5 w-24 bg-emerald-700 mb-8"></div>
+              </div>
+              <p class="text-2xl text-stone-700 leading-relaxed font-light mb-10 border-l-4 border-yellow-500 pl-8 py-2">
+                “Hlefi is a rural hamlet and locality in the Ho West District of Ghana's Volta Region, situated at approximately 6°42′55″N 0°22′16″E and characterized by a traditional agrarian economy.”
+              </p>
+              <p class="text-lg text-stone-600 leading-relaxed mb-12">
+                With a population of 5,129 (2010 census), the community is predominantly composed of farmers (80%), alongside traders and hunters, facing widespread poverty despite communal efforts to develop infrastructure such as a clinic, police station, and school.
+              </p>
+              
+              <div class="grid grid-cols-2 gap-8 mb-12">
+                <div class="p-8 bg-white rounded-[40px] shadow-sm border border-stone-100 hover:shadow-xl transition-all">
+                  <i data-lucide="mountain" class="text-emerald-700 w-10 h-10 mb-4"></i>
+                  <h4 class="font-bold text-xl mb-2">Geography</h4>
+                  <p class="text-sm opacity-60">Akwapim-Togo ranges, semi-deciduous forests, and bamboo vegetation.</p>
+                </div>
+                <div class="p-8 bg-white rounded-[40px] shadow-sm border border-stone-100 hover:shadow-xl transition-all">
+                  <i data-lucide="cloud-rain" class="text-emerald-700 w-10 h-10 mb-4"></i>
+                  <h4 class="font-bold text-xl mb-2">Climate</h4>
+                  <p class="text-sm opacity-60">Tropical patterns supporting rich biodiversity and rural ecology.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="relative reveal">
+              <div class="relative rounded-[80px] overflow-hidden shadow-2xl aspect-[4/5] md:aspect-auto md:h-[700px]">
+                <img 
+                  src="./src/community development.png" 
+                  alt="Rural Village Life in Hlefi" 
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-12 left-12 right-12 text-white">
+                  <div class="flex items-center gap-4 mb-4">
+                    <span class="px-4 py-1 bg-yellow-500 text-emerald-950 rounded-full text-[10px] font-black tracking-widest uppercase">Resilience</span>
+                  </div>
+                  <h3 class="text-3xl font-serif mb-2">Community Driven</h3>
+                  <p class="text-sm opacity-80 max-w-sm">Despite economic challenges, Hlefi residents unite for infrastructure development through communal labor.</p>
+                </div>
+              </div>
+              <!-- Floating organic circle decoration -->
+              <div class="absolute -top-10 -right-10 w-40 h-40 bg-yellow-500/10 rounded-full blur-3xl -z-10 animate-sway"></div>
+              <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-emerald-700/10 rounded-full blur-3xl -z-10 animate-float"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HISTORY SECTION -->
+      <section id="history" class="py-32 bg-emerald-950 text-stone-100 organic-curve-top">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-20 reveal">
+            <h2 class="text-5xl md:text-7xl mb-6">History & Heritage</h2>
+            <div class="h-1 w-20 bg-yellow-500 mx-auto mb-8"></div>
+            <p class="text-lg text-yellow-500 font-display uppercase tracking-widest font-bold px-4">From Notsie to the Togo Ranges</p>
+          </div>
+          
+          <div class="relative mt-20 max-w-5xl mx-auto">
+            <div class="absolute left-1/2 -translate-x-1/2 w-px h-full bg-stone-100/10 hidden md:block"></div>
+            
+            <div class="space-y-24 relative">
+              <!-- Item 1 -->
+              <div class="flex flex-col md:flex-row items-center gap-10 reveal">
+                <div class="flex-1 text-center md:text-right px-4">
+                  <div class="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-2">Ewe Migration</div>
+                  <h3 class="text-3xl font-serif mb-4">Escape from Notsie</h3>
+                  <p class="text-lg opacity-60 leading-relaxed font-light italic">Led by the quest for freedom under King Agokoli's reign, the Ewe ancestors migrated to settle in these fertile lands.</p>
+                </div>
+                <div class="relative z-10 w-20 h-20 rounded-full bg-emerald-900 border-4 border-yellow-500 flex items-center justify-center text-yellow-500 shadow-2xl">
+                   <i data-lucide="map" size="32"></i>
+                </div>
+                <div class="flex-1 hidden md:block"></div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="flex flex-col md:flex-row-reverse items-center gap-10 reveal">
+                <div class="flex-1 text-center md:text-left px-4">
+                  <div class="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-2">Colonial Era</div>
+                  <h3 class="text-3xl font-serif mb-4">German & British Togoland</h3>
+                  <p class="text-lg opacity-60 leading-relaxed font-light italic">The region transitioned through German Togoland and later British Togoland, shaping the modern administrative structures.</p>
+                </div>
+                <div class="relative z-10 w-20 h-20 rounded-full bg-emerald-900 border-4 border-yellow-500 flex items-center justify-center text-yellow-500 shadow-2xl">
+                   <i data-lucide="flag" size="32"></i>
+                </div>
+                <div class="flex-1 hidden md:block"></div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="flex flex-col md:flex-row items-center gap-10 reveal">
+                <div class="flex-1 text-center md:text-right px-4">
+                  <div class="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-2">Governance</div>
+                  <h3 class="text-3xl font-serif mb-4">District Creation</h3>
+                  <p class="text-lg opacity-60 leading-relaxed font-light italic">The formation of the Ho West District reinforced Hlefi's role as a vital hub for regional agriculture and culture.</p>
+                </div>
+                <div class="relative z-10 w-20 h-20 rounded-full bg-emerald-900 border-4 border-yellow-500 flex items-center justify-center text-yellow-500 shadow-2xl">
+                   <i data-lucide="anchor" size="32"></i>
+                </div>
+                <div class="flex-1 hidden md:block"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-24 text-center reveal">
+            <a href="https://grokipedia.com/page/hlefi" target="_blank" class="inline-flex items-center gap-3 text-yellow-500 hover:text-white transition-colors group">
+              <span class="text-xl font-serif border-b-2 border-yellow-500 group-hover:border-white py-2">Discover Detailed History on Grokipedia</span>
+              <i data-lucide="external-link" size="20"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ECONOMY & HUNTING SECTION -->
+      <section id="agriculture" class="py-32 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal">
+            <div>
+              <h2 class="text-5xl md:text-7xl text-emerald-950 mb-6 font-serif">The Green Pulse</h2>
+              <div class="h-1.5 w-24 bg-emerald-700 mb-6"></div>
+              <p class="text-lg text-emerald-700 font-display uppercase tracking-widest font-bold">Economy: Agriculture, Hunting & Trading</p>
+            </div>
+            <div class="p-8 bg-stone-50 rounded-[40px] flex items-center gap-6 border border-stone-100">
+               <div class="w-16 h-16 rounded-full bg-emerald-700 flex items-center justify-center text-white">
+                  <i data-lucide="sprout" size="32"></i>
+               </div>
+               <div>
+                  <div class="text-3xl font-black text-emerald-950">80%</div>
+                  <div class="text-xs uppercase tracking-widest text-stone-400 font-bold">Farmers</div>
+               </div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+            <div class="reveal">
+              <h3 class="text-3xl font-serif mb-6 text-emerald-900 underline decoration-yellow-500 decoration-4 underline-offset-8">A Farming Legacy</h3>
+              <p class="text-lg text-stone-600 leading-relaxed mb-8">
+                Hlefi is home to fertile volcanic soils that yield high-quality maize, cassava, yam, and fresh vegetables. Women-led markets drive the local trade, ensuring food security and rural stability.
+              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="aspect-square rounded-3xl overflow-hidden shadow-lg group">
+                  <img src="./src/farming.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Maize farming">
+                </div>
+                <div class="aspect-square rounded-3xl overflow-hidden shadow-lg group translate-y-8">
+                  <img src="./src/tomato.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Root crops">
+                </div>
+              </div>
+            </div>
+            <div class="reveal mt-12 md:mt-0">
+               <div class="bg-emerald-950 p-12 rounded-[60px] text-white relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i data-lucide="shield" size="120"></i>
+                  </div>
+                  <h3 class="text-3xl font-serif mb-6 text-yellow-500">Traditional Hunting</h3>
+                  <p class="text-lg opacity-80 leading-relaxed mb-8">
+                    In the dense forests and savanna woodlands surrounding Hlefi, traditional hunting remains a vital supplementary livelihood. Skilled hunters navigate forest paths, preserving ancient tracking techniques and providing protein sources for the community.
+                  </p>
+                   <!-- Image of black people hunting as requested -->
+                  <div class="rounded-3xl overflow-hidden relative h-64 shadow-2xl border-2 border-yellow-500/20">
+                    <img src="./src/hunting.png" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Rural life and exploration">
+                    <div class="absolute inset-0 bg-emerald-950/40"></div>
+                    <div class="absolute bottom-4 left-4 p-4 glass rounded-2xl">
+                       <span class="text-[10px] font-black uppercase tracking-widest">Heritage Skill</span>
+                    </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION & H2O FOR LIFE SECTION -->
+      <section id="water" class="py-32 px-6 bg-emerald-900 text-white organic-curve-bottom">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-24 reveal">
+            <h2 class="text-5xl md:text-7xl font-serif mb-6">Education & Water</h2>
+            <div class="h-1.5 w-24 bg-yellow-500 mx-auto mb-8"></div>
+            <p class="text-lg opacity-80 font-display uppercase tracking-widest font-bold">Collaborative Sustainability</p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-20 items-center mb-24">
+            <div class="reveal">
+              <p class="text-2xl md:text-3xl font-light leading-relaxed mb-10 italic text-stone-200 border-l-4 border-yellow-500 pl-8">
+                “I want to express my sincere gratitude to the United States-based non-profit organization called <span class="text-yellow-500 font-bold">H2O For Life</span> for supporting and collaborating with my dad’s school, Hlefi Community School, in Ghana.”
+              </p>
+              <div class="bg-white/5 border border-white/10 p-12 rounded-[50px] glass">
+                <h4 class="text-2xl font-bold mb-6 text-yellow-500">The 2021 Project</h4>
+                <ul class="space-y-4 text-emerald-100/80">
+                  <li class="flex items-start gap-4">
+                    <i data-lucide="check-circle" class="text-yellow-500 mt-1"></i>
+                    <span>Implementation of Rainwater Catchment System</span>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <i data-lucide="check-circle" class="text-yellow-500 mt-1"></i>
+                    <span>Safe Drinking Water & Sanitation Improvements</span>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <i data-lucide="check-circle" class="text-yellow-500 mt-1"></i>
+                    <span>School Farming Project featuring: Carrots, Cabbage, Okra, Tomatoes, Spinach</span>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <i data-lucide="check-circle" class="text-yellow-500 mt-1"></i>
+                    <span>Sustainability Education & Teamwork</span>
+                  </li>
+                </ul>
+                <div class="flex flex-wrap gap-4 mt-12">
+                   <a href="https://www.h2oforlifeschools.org/projects/998/updates/1004" target="_blank" class="px-6 py-3 bg-yellow-500 text-emerald-950 rounded-full font-black text-[10px] tracking-widest hover:scale-105 transition-all shadow-lg">VIEW PROJECT UPDATES</a>
+                   <a href="https://www.h2oforlifeschools.org/projects/998" target="_blank" class="px-6 py-3 border border-white/30 rounded-full font-black text-[10px] tracking-widest hover:bg-white/10 transition-all">VIEW PROJECT PROFILE</a>
+                </div>
+              </div>
+            </motion.div>
+            
+            <div class="space-y-8 reveal">
+               <div class="aspect-video rounded-[50px] overflow-hidden shadow-2xl border-4 border-white/10 relative group">
+                  <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube.com/embed/sLKmWynWQPI" 
+                    title="Water Project"
+                    allowFullScreen></iframe>
+                  <div class="absolute top-4 right-4 bg-emerald-900/60 p-3 rounded-full backdrop-blur-md">
+                     <i data-lucide="play" class="text-yellow-500" size="20"></i>
+                  </div>
+               </div>
+               <div class="aspect-video rounded-[50px] overflow-hidden shadow-2xl border-4 border-white/10 relative group">
+                  <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube.com/embed/163ssdOVoFQ" 
+                    title="Farm Project"
+                    allowFullScreen></iframe>
+                  <div class="absolute top-4 right-4 bg-emerald-900/60 p-3 rounded-full backdrop-blur-md">
+                     <i data-lucide="play" class="text-yellow-500" size="20"></i>
+                  </div>
+               </div>
+            </div>
+          </div>
+
+          <!-- Feature Image Section -->
+          <div class="w-full rounded-[60px] overflow-hidden shadow-2xl border-2 border-yellow-500/20 reveal relative">
+            <img 
+              src="./src/hlefischool.jpeg" 
+              class="w-full h-auto hover:scale-105 transition-transform duration-1000" 
+              alt="H2O Project Dashboard"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent opacity-60"></div>
+            <div class="absolute bottom-10 left-10 p-10 bg-white shadow-2xl rounded-[40px] hidden md:block max-w-lg">
+               <h4 class="text-emerald-950 text-2xl font-black mb-4">Sustainability in Action</h4>
+               <p class="text-stone-600">Students actively participate in watering crops and learning the value of shared responsibility and environmental stewardship.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CULTURE & FESTIVALS SECTION -->
+      <section id="culture" class="py-32 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center justify-between mb-24 gap-12 reveal">
+            <div class="md:w-1/2">
+              <h2 class="text-5xl md:text-7xl font-serif text-emerald-950 mb-6">Cultural Vibrancy</h2>
+              <div class="h-1.5 w-24 bg-emerald-700 mb-8"></div>
+              <p class="text-xl text-stone-600 leading-relaxed font-light">
+                The soul of Hlefi resides in its rhythmic traditions. From the energetic <span class="text-emerald-700 font-bold">Agbadza dance</span> to the historic <span class="text-emerald-700 font-bold">Hogbetsotso Festival</span>, our culture is a living archive.
+              </p>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+              <div class="p-8 bg-stone-50 rounded-[40px] flex flex-col items-center shadow-sm hover:shadow-xl transition-all">
+                <i data-lucide="music" class="text-yellow-600 mb-4" size="40"></i>
+                <h4 class="font-bold text-center">Drumming</h4>
+              </div>
+              <div class="p-8 bg-stone-50 rounded-[40px] flex flex-col items-center shadow-sm hover:shadow-xl transition-all translate-y-8">
+                <i data-lucide="users" class="text-yellow-600 mb-4" size="40"></i>
+                <h4 class="font-bold text-center">Dance</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative rounded-[80px] overflow-hidden h-[600px] shadow-2xl reveal group">
+            <img src="./src/akwapem-togo.png" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Traditional Drumming">
+            <div class="absolute inset-0 bg-emerald-950/40 mix-blend-multiply"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-center p-12">
+               <div class="reveal">
+                  <h3 class="text-5xl md:text-7xl text-white font-serif mb-6">The Heartbeat of the Mountain</h3>
+                  <div class="h-1 w-24 bg-yellow-500 mx-auto"></div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIGITAL AGE & MEMORIAL SECTION -->
+      <section class="py-32 bg-stone-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <!-- Digital Section -->
+            <div class="reveal p-16 bg-white rounded-[70px] shadow-sm border border-stone-100">
+               <div class="flex items-center gap-4 mb-8">
+                  <div class="w-16 h-16 bg-emerald-100 text-emerald-900 rounded-2xl flex items-center justify-center">
+                    <i data-lucide="cpu" size="32"></i>
+                  </div>
+                  <h3 class="text-3xl font-black text-emerald-950 tracking-tight uppercase">Hlefi in the Digital Age</h3>
+               </div>
+               <p class="text-lg text-stone-600 leading-relaxed mb-10">
+                 Technology and AI are helping preserve our history. Projects like AI-generated biographies and digital storytelling ensure our heritage reaches the world.
+               </p>
+               <a href="https://grokipedia.com/page/hlefi" target="_blank" class="inline-flex items-center gap-4 group p-6 bg-emerald-950 text-white rounded-[32px] w-full">
+                  <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-yellow-500 group-hover:text-emerald-950 transition-all">
+                    <i data-lucide="book" size="24"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-black tracking-widest opacity-60 uppercase">Digital Encyclopedia</div>
+                    <div class="text-lg font-bold">Explore Grokipedia - Hlefi</div>
+                  </div>
+               </a>
+            </div>
+
+            <!-- Memorial Section -->
+            <div class="reveal p-16 bg-emerald-950 rounded-[70px] text-white shadow-2xl relative overflow-hidden">
+               <div class="absolute top-0 right-0 p-10 opacity-5">
+                  <i data-lucide="heart" size="200"></i>
+               </div>
+               <div class="relative z-10">
+                  <div class="flex items-center gap-4 mb-8">
+                    <div class="w-16 h-16 bg-white/10 text-yellow-500 rounded-2xl flex items-center justify-center">
+                      <i data-lucide="award" size="32"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-white tracking-tight uppercase">Memorial & Heritage</h3>
+                  </div>
+                  <p class="text-lg opacity-70 leading-relaxed mb-10">
+                    Honoring alumni and contributors who built the community foundation. Dedicated to my dad, an indigine and alumni of Hlefi Community School.
+                  </p>
+                  <a href="https://samueladeklo.created.app/" target="_blank" class="inline-flex items-center gap-4 group p-6 bg-yellow-500 text-emerald-950 rounded-[32px] w-full">
+                    <div class="w-12 h-12 bg-emerald-950/10 rounded-xl flex items-center justify-center group-hover:bg-emerald-950 group-hover:text-white transition-all">
+                      <i data-lucide="external-link" size="24"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-black tracking-widest opacity-60 uppercase">Tribute Site</div>
+                      <div class="text-lg font-bold">Samuel Adeklo Memorial Website</div>
+                    </div>
+                  </a>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOURISM SECTION -->
+      <section id="tourism" class="py-32 px-6 bg-emerald-950 text-white organic-curve-top">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="reveal">
+              <h2 class="text-5xl md:text-7xl font-serif text-yellow-500 mb-8">Eco-Tourism</h2>
+              <div class="h-1.5 w-24 bg-stone-100/20 mb-8"></div>
+              <p class="text-xl text-stone-300 font-light leading-relaxed mb-12">
+                Discover the untouched beauty of the Togo ranges. From forest exploration to virtual drone map navigation, we invite you to experience Hlefi's natural majesty.
+              </p>
+            </div>
+            <div class="reveal aspect-video rounded-[60px] overflow-hidden shadow-2xl border-4 border-white/10 group relative">
+               <iframe 
+                 class="w-full h-full" 
+                 src="https://www.youtube.com/embed/ezOzjy7q-28" 
+                 title="Hlefi Eco-Tourism"
+                 allowFullScreen></iframe>
+               <div class="absolute top-4 right-4 bg-emerald-900/60 p-3 rounded-full backdrop-blur-md pointer-events-none">
+                  <i data-lucide="video" class="text-yellow-500" size="20"></i>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- SATELLITE EXPLORATION SECTION -->
+      <section id="map" class="py-32 px-6 bg-stone-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-5xl md:text-7xl text-emerald-950 mb-6 font-serif">Virtual Village Map</h2>
+            <div class="h-1.5 w-24 bg-emerald-700 mx-auto mb-8"></div>
+            <p class="text-lg text-emerald-700 font-display uppercase tracking-widest font-bold">Explore Hlefi from Above</p>
+          </div>
+          
+          <div class="relative rounded-[60px] overflow-hidden shadow-2xl border-8 border-white h-[600px] reveal">
+            <!-- Google Maps Satellite View centered on Hlefi -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15844.757876805036!2d0.371111!3d6.715278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1026074900000001%3A0x7d8a6e8e8e8e8e8e!2sHlefi%2C%20Ghana!5e1!3m2!1sen!2s!4v1715088000000!5m2!1sen!2s&maptype=satellite" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <div class="absolute bottom-10 left-10 glass p-6 rounded-3xl max-w-xs hidden md:block">
+               <div class="flex items-center gap-3 mb-2 text-emerald-900">
+                  <i data-lucide="map-pin" size="18"></i>
+                  <span class="font-bold uppercase tracking-widest text-[10px]">Location Pin</span>
+               </div>
+               <p class="text-sm text-stone-600 font-medium">Approximately 6°42′55″N 0°22′16″E. Nestled within the Akwapim-Togo mountain ranges.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- CONTACT & SUPPORT SECTION -->
+      <section id="contact" class="py-32 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="reveal">
+              <h2 class="text-5xl md:text-7xl text-emerald-950 mb-6 font-serif">Support Hlefi</h2>
+              <div class="h-1.5 w-24 bg-emerald-700 mb-8"></div>
+              <p class="text-xl text-stone-600 leading-relaxed font-light mb-10">
+                We welcome organizations and individuals who want to support our village development initiatives. For inquiries or collaboration, please reach out to our Paramount Chief.
+              </p>
+            </div>
+            
+            <div class="reveal p-12 bg-stone-50 rounded-[60px] border border-stone-100 shadow-sm">
+               <div class="flex items-center gap-6 mb-10">
+                  <div class="w-20 h-20 bg-emerald-900 rounded-[30px] flex items-center justify-center text-white shadow-xl">
+                    <i data-lucide="crown" size="40"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-3xl font-serif text-emerald-950">Togbe Adjakojo</h3>
+                    <p class="text-emerald-700 font-bold uppercase tracking-widest text-[10px]">Hlefi Paramount Chief</p>
+                  </div>
+               </div>
+               
+               <div class="space-y-6">
+                  <div class="text-sm text-stone-500 uppercase tracking-[0.2em] font-black mb-8 border-b pb-4">Contact for Organizations</div>
+                  
+                  <div class="flex flex-wrap gap-4">
+                     <a href="tel:+233244598165" class="flex-1 min-w-[200px] flex items-center justify-between p-6 bg-emerald-900 text-white rounded-[32px] hover:bg-emerald-700 transition-all group">
+                        <div class="flex items-center gap-4">
+                           <i data-lucide="phone-call" class="text-yellow-500"></i>
+                           <span class="font-bold tracking-widest text-xs">+233 244 598 165</span>
+                        </div>
+                        <i data-lucide="arrow-right" size="18" class="opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0"></i>
+                     </a>
+                     
+                     <a href="https://wa.me/233244598165" target="_blank" class="flex-1 min-w-[200px] flex items-center justify-between p-6 bg-[#25D366] text-white rounded-[32px] hover:brightness-110 transition-all group">
+                        <div class="flex items-center gap-4">
+                           <i data-lucide="message-circle" class="text-white"></i>
+                           <span class="font-bold tracking-widest text-xs">WHATSAPP</span>
+                        </div>
+                        <i data-lucide="arrow-right" size="18" class="opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bg-emerald-950 text-stone-400 py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-16 border-b border-white/5 pb-20">
+          <div class="col-span-2">
+            <div class="flex items-center gap-3 mb-8 text-white">
+              <i data-lucide="leaf" class="text-yellow-500" size="32"></i>
+              <span class="text-4xl font-display font-black tracking-tighter uppercase">Hlefi Village</span>
+            </div>
+            <p class="max-w-md text-xl opacity-60 leading-relaxed italic mb-10">
+              “Hlefi is more than a village — it is a story of resilience, culture, agriculture, education, and hope for future generations.”
+            </p>
+            <div class="flex gap-4">
+               <a href="https://en.wikipedia.org/wiki/Hlefi" target="_blank" class="p-3 bg-white/5 rounded-xl hover:bg-yellow-500 hover:text-emerald-950 transition-all">
+                  <i data-lucide="info" size="20"></i>
+               </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="text-white font-bold uppercase tracking-widest text-[10px] mb-8">Village Resources</h5>
+            <ul class="space-y-4 text-sm font-medium">
+              <li><a href="#history" class="hover:text-yellow-500 transition-colors">History Timeline</a></li>
+              <li><a href="#agriculture" class="hover:text-yellow-500 transition-colors">Economic Showcase</a></li>
+              <li><a href="#tourism" class="hover:text-yellow-500 transition-colors">Eco-Tourism</a></li>
+              <li><a href="https://grokipedia.com/page/hlefi" target="_blank" class="hover:text-yellow-500 transition-colors">Digital Encyclopedia</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-white font-bold uppercase tracking-widest text-[10px] mb-8">Contact Our Community</h5>
+            <div class="space-y-4 text-sm">
+               <p>Ho West District</p>
+               <p>Volta Region, Ghana</p>
+               <p class="text-yellow-500 font-bold border-t border-white/5 pt-4">Sustainable Innovation</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pt-20 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div class="text-[10px] uppercase font-black tracking-[0.3em] opacity-40">
+            © 2026 HLEFI COMMUNITY DIGITAL ARCHIVE. ALL RIGHTS RESERVED.
+          </div>
+          <div class="text-[10px] uppercase font-black tracking-[0.3em] text-stone-200">
+            Developed by <a href="http://www.solomonadeklo.com" target="_blank" class="text-yellow-500 hover:underline decoration-yellow-500 underline-offset-4">Solomon Yaw Adeklo</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/script.js"></script>
+    <script>
+      // Initialize Lucide Icons
+      window.addEventListener('load', () => {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      });
+    </script>
+  </body>
+</html>
+
